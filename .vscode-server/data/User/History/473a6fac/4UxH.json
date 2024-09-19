@@ -1,0 +1,23 @@
+{
+    "remote.SSH.remotePlatform": {
+        "MIV6": "linux",
+        "MIV5_aimi": "linux",
+        "MIV3": "linux",
+        "SMIV3": "linux",
+        "SMIV5": "linux",
+        "SMIV4": "linux",
+        "MIV5": "linux",
+        "MIV1": "linux",
+        "MIV6_aimi": "linux",
+        "MIV2": "linux",
+        "OS": "linux",
+        "OS_VM": "linux"
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.editorAssociations": {
+        "*.out": "default"
+    },
+
+    "explorer.autoReveal": false
+
+}

@@ -1,0 +1,146 @@
+2024-09-04 09:43:19.223 [info] [main] Log level: Info
+2024-09-04 09:43:19.223 [info] [main] Validating found git in: "git"
+2024-09-04 09:43:19.223 [info] [main] Using git "2.17.1" from "git"
+2024-09-04 09:43:19.223 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-04 09:43:19.223 [info] > git rev-parse --show-toplevel [2ms]
+2024-09-04 09:43:19.223 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:19.227 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 09:43:19.227 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:19.229 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 09:43:19.229 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:19.233 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 09:43:19.234 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:19.237 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 09:43:19.237 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:19.241 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-04 09:43:20.439 [info] > git rev-parse --show-toplevel [16ms]
+2024-09-04 09:43:20.439 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:20.461 [info] > git rev-parse --show-toplevel [18ms]
+2024-09-04 09:43:20.461 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:43:22.709 [info] > git rev-parse --show-toplevel [1ms]
+2024-09-04 09:43:22.709 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-09-04 09:46:39.093 [info] > git rev-parse --show-toplevel [4ms]
+2024-09-04 09:46:39.100 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-09-04 09:46:39.110 [info] [Model][openRepository] Opened repository: /home/user/pintos
+2024-09-04 09:46:39.116 [info] > git config --get commit.template [2ms]
+2024-09-04 09:46:39.121 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:46:39.121 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:39.126 [info] > git status -z -uall [1ms]
+2024-09-04 09:46:39.138 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2024-09-04 09:46:39.138 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:39.139 [info] > git config --get commit.template [2ms]
+2024-09-04 09:46:39.145 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:46:39.145 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:39.149 [info] > git status -z -uall [2ms]
+2024-09-04 09:46:39.153 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:46:39.153 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:39.642 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-04 09:46:40.493 [info] > git config --get commit.template [3ms]
+2024-09-04 09:46:40.494 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:46:40.494 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:40.497 [info] > git status -z -uall [1ms]
+2024-09-04 09:46:40.500 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:46:40.501 [warning] [Git][getBranch] No such branch: master
+2024-09-04 09:46:45.790 [info] > git config --get commit.template [2ms]
+2024-09-04 09:46:45.792 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:46:45.794 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:46:45.795 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:46:45.829 [info] > git status -z -uall [33ms]
+2024-09-04 09:46:45.834 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 09:46:45.838 [info] > git config --local branch.master.vscode-merge-base [2ms]
+2024-09-04 09:46:45.838 [warning] [Git][config] git config failed: Failed to execute git
+2024-09-04 09:46:45.842 [info] > git reflog master --grep-reflog=branch: Created from *. [2ms]
+2024-09-04 09:46:45.845 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2024-09-04 09:46:45.849 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [2ms]
+2024-09-04 09:46:45.853 [info] > git config --local branch.master.vscode-merge-base origin/master [1ms]
+2024-09-04 09:46:45.857 [info] > git config --get commit.template [2ms]
+2024-09-04 09:46:45.859 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:46:45.861 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:46:45.863 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:46:45.898 [info] > git status -z -uall [34ms]
+2024-09-04 09:46:45.903 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 09:46:45.905 [info] > git merge-base refs/heads/master refs/remotes/origin/master [2ms]
+2024-09-04 09:46:45.907 [info] > git config --local branch.master.vscode-merge-base [3ms]
+2024-09-04 09:46:45.909 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [3ms]
+2024-09-04 09:46:45.911 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [3ms]
+2024-09-04 09:46:45.912 [info] > git diff --name-status -z --diff-filter=ADMR f685123e5f8e7c84648b2de810ba20e85b7d1504...refs/remotes/origin/master [2ms]
+2024-09-04 09:46:50.841 [info] > git config --get commit.template [3ms]
+2024-09-04 09:46:50.842 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:46:50.844 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:46:50.846 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:46:50.880 [info] > git status -z -uall [32ms]
+2024-09-04 09:46:50.883 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:46:50.888 [info] > git config --local branch.master.vscode-merge-base [3ms]
+2024-09-04 09:46:50.892 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2024-09-04 09:47:45.829 [info] > git config --get commit.template [3ms]
+2024-09-04 09:47:45.830 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:47:45.832 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:47:45.833 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:47:45.867 [info] > git status -z -uall [33ms]
+2024-09-04 09:47:45.873 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 09:47:45.876 [info] > git config --local branch.master.vscode-merge-base [1ms]
+2024-09-04 09:47:45.881 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2024-09-04 09:48:09.164 [info] > git config --get commit.template [2ms]
+2024-09-04 09:48:09.165 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:48:09.167 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:48:09.168 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:48:09.204 [info] > git status -z -uall [34ms]
+2024-09-04 09:48:09.207 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:48:09.210 [info] > git config --local branch.master.vscode-merge-base [1ms]
+2024-09-04 09:48:09.213 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2024-09-04 09:48:52.805 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-04 09:48:53.849 [info] > git check-ignore -v -z --stdin [1ms]
+2024-09-04 09:49:00.052 [info] > git check-ignore -v -z --stdin [3ms]
+2024-09-04 09:49:22.166 [info] > git show --textconv :src/threads/Make.vars [4ms]
+2024-09-04 09:49:22.167 [info] > git ls-files --stage -- /home/user/pintos/src/threads/Make.vars [2ms]
+2024-09-04 09:49:22.171 [info] > git cat-file -s 310c240748ed69c653b97a88f828e6d0bb8b1a9a [2ms]
+2024-09-04 09:49:28.910 [info] > git check-ignore -v -z --stdin [2ms]
+2024-09-04 09:49:29.611 [info] > git show --textconv :src/utils/Makefile [3ms]
+2024-09-04 09:49:29.612 [info] > git ls-files --stage -- /home/user/pintos/src/utils/Makefile [1ms]
+2024-09-04 09:49:29.615 [info] > git cat-file -s e38eb1f3dfa2972035eee486247e40e939a0be38 [1ms]
+2024-09-04 09:49:30.943 [info] > git show --textconv :src/utils/pintos [2ms]
+2024-09-04 09:49:30.943 [info] > git ls-files --stage -- /home/user/pintos/src/utils/pintos [1ms]
+2024-09-04 09:49:30.947 [info] > git cat-file -s 58635a9b65f5a08547f97264a77d467cedee673a [1ms]
+2024-09-04 09:49:41.112 [info] > git show --textconv :src/utils/pintos-gdb [2ms]
+2024-09-04 09:49:41.113 [info] > git ls-files --stage -- /home/user/pintos/src/utils/pintos-gdb [2ms]
+2024-09-04 09:49:41.116 [info] > git cat-file -s 4ef38d3f177f1c9b694d422c14efdd2df98809d9 [1ms]
+2024-09-04 09:50:34.355 [info] > git config --get commit.template [3ms]
+2024-09-04 09:50:34.357 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 09:50:34.359 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:50:34.361 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:50:34.395 [info] > git status -z -uall [33ms]
+2024-09-04 09:50:34.399 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:50:34.402 [info] > git config --local branch.master.vscode-merge-base [1ms]
+2024-09-04 09:50:34.406 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [2ms]
+2024-09-04 09:50:39.405 [info] > git config --get commit.template [3ms]
+2024-09-04 09:50:39.406 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:50:39.408 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:50:39.409 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:50:39.444 [info] > git status -z -uall [33ms]
+2024-09-04 09:50:39.450 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:50:39.453 [info] > git config --local branch.master.vscode-merge-base [1ms]
+2024-09-04 09:50:39.457 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2024-09-04 09:51:34.273 [info] > git config --get commit.template [2ms]
+2024-09-04 09:51:34.277 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:51:34.279 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:51:34.280 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 09:51:34.321 [info] > git status -z -uall [39ms]
+2024-09-04 09:51:34.325 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 09:51:34.328 [info] > git config --local branch.master.vscode-merge-base [1ms]
+2024-09-04 09:51:34.332 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [2ms]
+2024-09-04 09:51:39.339 [info] > git config --get commit.template [5ms]
+2024-09-04 09:51:39.340 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:51:39.342 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 09:51:39.344 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2024-09-04 09:51:39.379 [info] > git status -z -uall [34ms]
+2024-09-04 09:51:39.383 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-09-04 09:51:39.386 [info] > git config --local branch.master.vscode-merge-base [2ms]
+2024-09-04 09:51:39.388 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2024-09-04 10:12:46.295 [info] > git config --get commit.template [4ms]
+2024-09-04 10:12:46.296 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-04 10:12:46.298 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/user/pintos/.git/refs/remotes/origin/master'
+2024-09-04 10:12:46.299 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2024-09-04 10:12:46.332 [info] > git status -z -uall [32ms]
+2024-09-04 10:12:46.336 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-09-04 10:12:46.339 [info] > git config --local branch.master.vscode-merge-base [0ms]
+2024-09-04 10:12:46.342 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [2ms]

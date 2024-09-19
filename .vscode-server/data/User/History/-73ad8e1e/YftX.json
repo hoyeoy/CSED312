@@ -1,0 +1,37 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "python.defaultInterpreterPath": "C:\\ProgramData\\anaconda3\\python.exe",
+    "remote.SSH.configFile": "C:\\Users\\seung\\.ssh\\config",
+    "remote.SSH.remotePlatform": {
+        "programming2.postech.ac.kr": "linux",
+        "192.168.32.128": "linux"
+    },
+    "git.ignoreLegacyWarning": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Cygwin": {
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "args": [
+                "--login"
+            ]
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true
+}
