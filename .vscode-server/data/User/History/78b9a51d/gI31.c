@@ -173,8 +173,8 @@ timer_interrupt (struct intr_frame *args UNUSED)
   ticks++;
   thread_tick ();
 
-  /*Project 1*/ //0930
-  int64_t thread_ticks;
+  /*Project 1*/
+  int64_t thread_ticks
   if(list_empty(&sleep_list)){
     thread_ticks = list_begin(&sleep_list)->sleep_ticks;
     if(thread_ticks>=ticks){

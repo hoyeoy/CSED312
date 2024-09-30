@@ -1,0 +1,44 @@
+2024-09-29 05:58:18.965 [info] [main] Log level: Info
+2024-09-29 05:58:18.965 [info] [main] Validating found git in: "git"
+2024-09-29 05:58:18.965 [info] [main] Using git "2.17.1" from "git"
+2024-09-29 05:58:18.965 [info] [Model][doInitialScan] Initial repository scan started
+2024-09-29 05:58:18.965 [info] > git rev-parse --show-toplevel [31ms]
+2024-09-29 05:58:18.965 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-09-29 05:58:18.965 [info] [Model][openRepository] Opened repository: /home/user
+2024-09-29 05:58:18.970 [info] > git rev-parse --show-toplevel [53ms]
+2024-09-29 05:58:18.971 [info] > git config --get commit.template [55ms]
+2024-09-29 05:58:18.979 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2024-09-29 05:58:18.980 [info] > git rev-parse --show-toplevel [2ms]
+2024-09-29 05:58:18.990 [info] > git rev-parse --show-toplevel [6ms]
+2024-09-29 05:58:19.000 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-29 05:58:19.034 [info] > git rev-parse --show-toplevel [4ms]
+2024-09-29 05:58:19.043 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-29 05:58:19.056 [info] > git rev-parse --show-toplevel [4ms]
+2024-09-29 05:58:19.065 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-29 05:58:19.072 [info] > git rev-parse --show-toplevel [2ms]
+2024-09-29 05:58:19.081 [info] > git rev-parse --show-toplevel [3ms]
+2024-09-29 05:58:19.087 [info] > git status -z -uall [98ms]
+2024-09-29 05:58:19.106 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2024-09-29 05:58:19.109 [info] > git rev-parse --show-toplevel [24ms]
+2024-09-29 05:58:19.116 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-09-29 05:58:19.118 [info] > git config --local branch.master.vscode-merge-base [8ms]
+2024-09-29 05:58:19.118 [warning] [Git][config] git config failed: Failed to execute git
+2024-09-29 05:58:19.120 [info] > git config --get commit.template [15ms]
+2024-09-29 05:58:19.126 [info] > git reflog master --grep-reflog=branch: Created from *. [5ms]
+2024-09-29 05:58:19.129 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2024-09-29 05:58:19.133 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [5ms]
+2024-09-29 05:58:19.133 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-09-29 05:58:19.145 [info] > git merge-base refs/heads/master refs/remotes/origin/master [8ms]
+2024-09-29 05:58:19.154 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [3ms]
+2024-09-29 05:58:19.159 [info] > git diff --name-status -z --diff-filter=ADMR 13ed3d648e552d030ef4876466cdf6df3eef2ce0...refs/remotes/origin/master [2ms]
+2024-09-29 05:58:19.184 [info] > git status -z -uall [42ms]
+2024-09-29 05:58:19.292 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [103ms]
+2024-09-29 05:58:19.337 [info] > git config --local branch.master.vscode-merge-base [42ms]
+2024-09-29 05:58:19.337 [warning] [Git][config] git config failed: Failed to execute git
+2024-09-29 05:58:19.347 [info] > git reflog master --grep-reflog=branch: Created from *. [7ms]
+2024-09-29 05:58:19.350 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2024-09-29 05:58:19.351 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-09-29 05:58:19.452 [info] > git check-ignore -v -z --stdin [19ms]
+2024-09-29 05:58:19.570 [info] > git show --textconv :pintos/src/threads/thread.c [12ms]
+2024-09-29 05:58:19.571 [info] > git ls-files --stage -- /home/user/pintos/src/threads/thread.c [11ms]
+2024-09-29 05:58:19.578 [info] > git cat-file -s 87f22b80607b4faba8ae2b1e9f93dc5d6659d8cc [3ms]

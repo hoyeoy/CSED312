@@ -603,8 +603,7 @@ thread_sleep(int64_t ticks)
   enum intr_level old_level;
 
   old_level = intr_disable();
-  
-  list_pop_front (&ready_list);
+
   if (cur != idle_thread){
     cur->sleep_ticks = ticks;
     list_insert_ordered(&ready_list, &cur->elem, (list_less_func *) sleep_list_order, 0);

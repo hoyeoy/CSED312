@@ -74,10 +74,7 @@ static void schedule (void);
 void thread_schedule_tail (struct thread *prev);
 static tid_t allocate_tid (void);
 
-/*Project 1*/
 static void thread_sleep(int64_t ticks);
-bool sleep_list_order(struct list_elem *x, struct list_elem *y, void *aux UNUSED);
-static void thread_awake(int64_t ticks);
 
 /* Initializes the threading system by transforming the code
    that's currently running into a thread.  This can't work in
@@ -100,8 +97,6 @@ thread_init (void)
   lock_init (&tid_lock);
   list_init (&ready_list);
   list_init (&all_list);
-  /*Project 1*/
-  list_init (&sleep_list);
 
   /* Set up a thread structure for the running thread. */
   initial_thread = running_thread ();
@@ -474,7 +469,6 @@ init_thread (struct thread *t, const char *name, int priority)
   t->priority = priority;
   t->magic = THREAD_MAGIC;
 
-  /*Project 1*/
   t->sleep_ticks = 0;
 
   old_level = intr_disable ();
@@ -596,44 +590,14 @@ allocate_tid (void)
    Used by switch.S, which can't figure it out on its own. */
 uint32_t thread_stack_ofs = offsetof (struct thread, stack);
 
-static void /*Project 1*/
-thread_sleep(int64_t ticks) 
+static void
+thread_sleep(int64_t ticks)
 {
   struct thread *cur = thread_current();
-  enum intr_level old_level;
 
-  old_level = intr_disable();
-  
-  list_pop_front (&ready_list);
   if (cur != idle_thread){
-    cur->sleep_ticks = ticks;
-    list_insert_ordered(&ready_list, &cur->elem, (list_less_func *) sleep_list_order, 0);
+    list_push_back(sleep_list, cur);
     thread_block();
   }
-
-  intr_set_level(old_level);
-}
-
-bool /*Project 1*/
-sleep_list_order(struct list_elem *x, struct list_elem *y, void *aux UNUSED)
-{
-  return (list_entry(x, struct thread, elem)-> sleep_ticks) < (list_entry(y, struct thread, elem)-> sleep_ticks);
-}
-
-static void /*Project 1*/
-thread_awake(int64_t ticks)
-{
-  struct list_elem* cur;
-  struct thread* temp_thread;
-  int64_t sleep_ticks;
-
-  for (cur = list_begin(&sleep_list); cur != list_end(&sleep_list); cur = list_next(cur)){
-    temp_thread = list_entry(cur, struct thread, elem);
-    sleep_ticks = temp_thread -> sleep_ticks;
-
-    if(sleep_ticks >= ticks){
-      list_pop_front(&sleep_list);
-      thread_unblock(temp_thread);
-    }
-  }
+  thread_ticks
 }

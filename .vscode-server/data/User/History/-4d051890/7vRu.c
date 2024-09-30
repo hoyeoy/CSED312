@@ -603,8 +603,7 @@ thread_sleep(int64_t ticks)
   enum intr_level old_level;
 
   old_level = intr_disable();
-  
-  list_pop_front (&ready_list);
+
   if (cur != idle_thread){
     cur->sleep_ticks = ticks;
     list_insert_ordered(&ready_list, &cur->elem, (list_less_func *) sleep_list_order, 0);
@@ -623,17 +622,16 @@ sleep_list_order(struct list_elem *x, struct list_elem *y, void *aux UNUSED)
 static void /*Project 1*/
 thread_awake(int64_t ticks)
 {
-  struct list_elem* cur;
-  struct thread* temp_thread;
+  struct thread *temp;
   int64_t sleep_ticks;
 
-  for (cur = list_begin(&sleep_list); cur != list_end(&sleep_list); cur = list_next(cur)){
-    temp_thread = list_entry(cur, struct thread, elem);
-    sleep_ticks = temp_thread -> sleep_ticks;
+  for (int i=0; i<list_size(&sleep_list); i++){
+    temp = sleep_list[i];
+    sleep_ticks = temp->sleep_ticks;
 
     if(sleep_ticks >= ticks){
       list_pop_front(&sleep_list);
-      thread_unblock(temp_thread);
+      thread_unblock(temp);
     }
   }
 }
